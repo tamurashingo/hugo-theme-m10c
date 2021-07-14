@@ -7,10 +7,10 @@
           <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
           <span class="posts-list-item-description">
             {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
-            {{ .PublishDate.Format "Jan 2, 2006" }}
+            {{ .PublishDate.Format "2006/01/02" }}
             -
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
-            {{ .ReadingTime }} min read
+            {{ .ReadingTime }} 分で読めます
           </span>
         </li>
       {{ end }}
