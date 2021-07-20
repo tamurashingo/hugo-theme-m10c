@@ -7,10 +7,18 @@
           <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
           <span class="posts-list-item-description">
             {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
-            {{ .PublishDate.Format "2006/01/02" }}
-            -
+            {{ .PublishDate.Format "2006/01/02" }} 公開
+            <br />
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
             {{ .ReadingTime }} 分で読めます
+            <br />
+            {{ partial "icon.html" (dict "ctx" $ "name" "tag") }}
+            {{ range .Params.tags }}
+              <a class="tag" href="{{ "/tags/" | relLangURL}}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+          </span>
+          <span>
+            {{ .Summary }}
           </span>
         </li>
       {{ end }}
