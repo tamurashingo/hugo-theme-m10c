@@ -29,7 +29,10 @@
       {{ .TableOfContents }}
       {{ .Content }}
     </div>
+    <hr />
     <div class="post-footer">
+      {{ partial "related.html" . }}
+      <br />
       {{ template "_internal/disqus.html" . }}
     </div>
   </article>
