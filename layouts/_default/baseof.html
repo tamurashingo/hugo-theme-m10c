@@ -3,6 +3,8 @@
   <head>
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
     <link rel="shortcut icon" href="{{ .Site.Params.favicon | default "/favicon.ico" }}" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" }}">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png">
     <meta charset="utf-8" />
     {{ hugo.Generator }}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
