@@ -1,8 +1,9 @@
 # m10c theme
 
-![Intro](https://github.com/vaga/hugo-theme-m10c/blob/master/images/cover.png)
+original: https://github.com/vaga/hugo-theme-m10c/
+mod: https://github.com/tamurashingo/hugo-theme-m10c/
 
-A Hugo minimalistic theme for bloggers
+site: https://salesforce-dev-notes.com/
 
 Main features:
 
@@ -14,6 +15,12 @@ Main features:
 - Customizable social media links on sidebar
 - Optimized for performance 100/100 on Lighthouse
 - All feather icons included
+
+- Japense language support
+- Related Link
+
+
+
 
 ## Getting started
 

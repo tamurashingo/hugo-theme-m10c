@@ -42,6 +42,10 @@
         {{ end }}
       </div>
       {{- end }}
+      <hr />
+      {{- with .Site.Params.copyright }}
+        &copy; {{ . }}
+      {{- end }}
     </header>
     <main class="app-container">
       {{ block "main" . }}
