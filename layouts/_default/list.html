@@ -4,7 +4,7 @@
     <ul class="posts-list">
       {{ range where .Paginator.Pages "Type" "!=" "page" }}
         <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+          <div class="posts-list-item-title"><a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a></div>
           <span class="posts-list-item-description">
             {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
             {{ .PublishDate.Format "2006/01/02" }} 公開
